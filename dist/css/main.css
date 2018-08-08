@@ -1,0 +1,201 @@
+@import "https://fonts.googleapis.com/css?family=Comfortaa:300,400|Muli:300,400,700";
+@import "https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-family: "Muli", sans-serif; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .row .col-1 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-2 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-3 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-4 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-5 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-6 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-7 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-8 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-9 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-10 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-11 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+  .row .col-12 {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 20px; }
+
+@media screen and (min-width: 672px) {
+  .row .col-1 {
+    width: calc(8.3333% - 1rem); }
+  .row .col-2 {
+    width: calc(16.6666% - 1rem); }
+  .row .col-3 {
+    width: calc(25% - 1rem); }
+  .row .col-4 {
+    width: calc(33.3333% - 1rem); }
+  .row .col-5 {
+    width: calc(41.6666% - 1rem); }
+  .row .col-6 {
+    width: calc(50% - 1rem); }
+  .row .col-7 {
+    width: calc(58.3333% - 1rem); }
+  .row .col-8 {
+    width: calc(66.6666% - 1rem); }
+  .row .col-9 {
+    width: calc(75% - 1rem); }
+  .row .col-10 {
+    width: calc(83.3333% - 1rem); }
+  .row .col-11 {
+    width: calc(91.6666% - 1rem); }
+  .row .col-12 {
+    width: calc(100% - 1rem); } }
+
+.card {
+  display: flex;
+  height: 500px;
+  width: 100%; }
+  .card .description {
+    padding: 40px 100px 40px 60px;
+    width: calc(50%);
+    background: #fdfdfd; }
+    .card .description .info .title {
+      font-size: 3em;
+      margin-bottom: 10px; }
+    .card .description .info .desc {
+      margin: 40px auto; }
+    .card .description .info .price {
+      margin-bottom: 20px; }
+      .card .description .info .price #newPrice {
+        letter-spacing: 2px; }
+      .card .description .info .price #oldPrice {
+        color: #777;
+        text-decoration: line-through;
+        letter-spacing: 2px; }
+    .card .description .info .qtyChanger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 150px;
+      margin-bottom: 20px; }
+      .card .description .info .qtyChanger i {
+        cursor: pointer;
+        font-weight: 100;
+        font-size: 1.5em; }
+    .card .description .info .cart {
+      display: flex; }
+      .card .description .info .cart .btn {
+        cursor: pointer;
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        border: none;
+        background-color: #272121;
+        color: #fdfdfd;
+        font-size: .75em;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px; }
+      .card .description .info .cart .wish {
+        display: flex;
+        margin-left: 15px;
+        background: #f6d5d5;
+        height: 45px;
+        width: 45px;
+        border-radius: 30px;
+        text-align: center;
+        cursor: pointer; }
+        .card .description .info .cart .wish .icon {
+          margin: auto;
+          font-size: 1.15em; }
+  .card .options {
+    padding: 80px 40px;
+    width: calc(16.6666%);
+    background: #f7f9ff; }
+    .card .options .thinText {
+      text-align: center;
+      letter-spacing: 4px;
+      color: #777;
+      font-size: .8em;
+      text-transform: uppercase; }
+    .card .options .color-options {
+      margin-bottom: 60px; }
+      .card .options .color-options .color {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 20px auto;
+        cursor: pointer; }
+      .card .options .color-options .colors {
+        list-style: none; }
+      .card .options .color-options .color1 {
+        background: #7c203a; }
+      .card .options .color-options .color2 {
+        background: #326765; }
+      .card .options .color-options .color3 {
+        background: #35477d; }
+      .card .options .color-options .color4 {
+        background: #ffd933; }
+    .card .options .size-options .sizes {
+      list-style: none;
+      padding-top: 20px; }
+      .card .options .size-options .sizes li {
+        font-size: .8em;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        margin: 10px auto; }
+  .card .image {
+    width: calc(33.3333%);
+    background: url("../imgs/dress.jpg");
+    background-position: center;
+    background-size: cover; }

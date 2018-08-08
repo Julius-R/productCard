@@ -1,0 +1,155 @@
+.card {
+  display: flex;
+  height: 500px;
+  width: 100%;
+
+  .description {
+    padding: 40px 100px 40px 60px;
+    width: calc(50%);
+    background: #fdfdfd;
+
+    .info {
+
+      .title {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        margin: 40px auto;
+      }
+
+      .price {
+        margin-bottom: 20px;
+
+        #newPrice {
+          letter-spacing: 2px;
+        }
+
+        #oldPrice {
+          color: #777;
+          text-decoration: line-through;
+          letter-spacing: 2px;
+        }
+      }
+
+      .qtyChanger {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+        margin-bottom: 20px;
+
+        i {
+          cursor: pointer;
+          font-weight: 100;
+          font-size: 1.5em;
+        }
+      }
+
+      .cart {
+        display: flex;
+
+        .btn {
+          cursor: pointer;
+          width: 150px;
+          height: 45px;
+          border-radius: 30px;
+          border: none;
+          background-color: #272121;
+          color: #fdfdfd;
+          font-size: .75em;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        .wish {
+          display: flex;
+          margin-left: 15px;
+          background: #f6d5d5;
+          height: 45px;
+          width: 45px;
+          border-radius: 30px;
+          text-align: center;
+          cursor: pointer;
+
+          .icon {
+            margin: auto;
+            font-size: 1.15em;
+          }
+        }
+      }
+    }
+  }
+
+  .options {
+    padding: 80px 40px;
+    width: calc(16.6666%);
+    background: #f7f9ff;
+
+    .thinText {
+      text-align: center;
+      letter-spacing: 4px;
+      color: #777;
+      font-size: .8em;
+      text-transform: uppercase;
+    }
+
+    .color-options {
+      margin-bottom: 60px;
+
+      .color {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 20px auto;
+        cursor: pointer;
+      }
+
+      .colors {
+        list-style: none;
+
+      }
+
+      .color1 {
+        background: #7c203a;
+      }
+
+      .color2 {
+        background: #326765;
+      }
+
+      .color3 {
+        background: #35477d;
+      }
+
+      .color4 {
+        background: #ffd933;
+      }
+    }
+
+    .size-options {
+      .sizes {
+        list-style: none;
+        padding-top: 20px;
+
+        li {
+          font-size: .8em;
+          font-weight: 500;
+          text-align: center;
+          cursor: pointer;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+
+  .image {
+    width: calc(33.3333%);
+    background: url('../imgs/dress.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+}
